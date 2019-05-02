@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Creating a Footer: Page Footer with More Content</title>
+</head>
+<body>
+  <header role="banner">
+    ... [page header with global navigation] ...
+  </header>
+
+  <main role="main">
+    <p>... [page content] ...</p>
+  </main>
+
+  <!-- ==== 开始页脚 ==== -->
+  <!-- 这是一个页面级的页脚，因为它最近的祖先元素是body -->
+  <footer role="contentinfo">
+    <p><small>&copy; Copyright 2014 The Corporation, Inc.</small></p>
+
+    <ul>
+      <li><a href="terms-of-use.html">Terms of Use</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+  </footer>
+  <!-- ==== 结束页脚 ==== -->
+</body>
+</html>
