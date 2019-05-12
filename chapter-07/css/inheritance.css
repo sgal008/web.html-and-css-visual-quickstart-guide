@@ -1,0 +1,19 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+  border: 1px solid #000;
+  overflow: hidden;
+  padding:  0 1em .25em;
+}
+
+p {
+  color: #36c; /* a blue color */
+  font-weight: bold;
+}
+
+img {
+  float: left; /* 是文本包围它（当前设置的图片） */
+  margin-right: 1em;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Specificity</title>
+  <!-- 下一行将加载包含图7.4.1中所示样式的样式表。注意在本书的图7.4.2中，下面行显示为
+        <link rel="stylesheet" href="css/style.css">
+        在图书网站上的这个例子中，我将样式表重命名为specificity.css，并将其放在名为css的子文件夹中；因此是css/specificity.css的href路径
+  -->
+  <link rel="stylesheet" href="css/specificity.css">
+</head>
+<body>
+  <div>
+    <p>Here's a generic <code>p</code> element. It will be red.</p>
+
+    <p class="example">Here's a  element with a <code>class</code> of <code>example</code>. There are two rules that could apply, but since the .<code>example</code> selector is
+    more specific, this paragraph will be blue.</p>
+
+    <p class="example example-2">Here's a <code>p</code> element with two classes: <code></code> and <code>example-2</code>. There are four rules that could apply to this paragraph. The
+    first two are overruled by the more specific last two. However, because the last two have the same selector, the order
+    breaks the tie between them: the one that appears later wins, and thus this paragraph will be green instead of magenta.</p>
+  </div>
+</body>
+</html>

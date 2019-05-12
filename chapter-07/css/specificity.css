@@ -1,0 +1,22 @@
+/* 注意：body样式没有出现在书中，这里是为了稍微修饰一下这个例子 */
+body {
+  font-size: 112.5%;
+  line-height: 1.35;
+}
+
+p {
+  color: red;
+}
+
+.example {
+  color: blue;
+}
+
+.example.example-2 {
+  color: magenta;
+  /* 会被下一条规则覆盖 */
+}
+
+.example.example-2 {
+  color: green;
+}
