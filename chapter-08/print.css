@@ -1,0 +1,14 @@
+/* 打印样式表 */
+
+body {
+	/*
+	使文本变大。
+	注意使用的Pt（point）单位。用pt适合打印样式。
+	*/
+	font-size: 25pt;
+}
+
+img {
+	/* 不显示图片 */
+	display: none;
+}

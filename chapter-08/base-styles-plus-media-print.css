@@ -1,0 +1,27 @@
+/* 针对所有媒体的样式 */
+img {
+  border: 4px solid red;
+}
+
+p {
+  color: orange;
+  font-style: italic;
+}
+
+/* 打印样式表 */
+@media print {
+  body {
+    /* 加大字号 */
+    font-size: 25pt;
+  }
+
+  p {
+    /* 黑色的十六进制值 */
+    color: #000;
+  }
+
+  img {
+    /* 不显示图片 */
+    display: none;
+  }
+}
