@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real Italic vs. Faux Italic</title>
+  <style>
+  p {
+    font-size: 1.2em;
+  }
+
+  .font-1 { /* 有真正的斜体字 */
+    font-family: "Palatino Linotype";
+  }
+
+  .font-2 { /* 没有斜体，所以浏览器会伪造它 */
+    font-family: Geneva;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  hr {
+    border: 1px solid #ccc;
+  }
+  </style>
+</head>
+<body>
+  <p class="font-1">Palatino Linotype sample text.</p>
+  <p class="font-1 italic">Palatino Linotype sample text (real italic).</p>
+
+  <hr>
+
+  <p class="font-2">Geneva sample text.</p>
+  <p class="font-2 italic">Geneva sample text (faux italic).</p>
+</body>
+</html>

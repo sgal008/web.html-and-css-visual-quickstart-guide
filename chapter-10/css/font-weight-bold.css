@@ -1,0 +1,15 @@
+body {
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: normal;
+}
+
+em,
+a:link,
+.intro .subhead {
+  font-weight: bold;
+}
