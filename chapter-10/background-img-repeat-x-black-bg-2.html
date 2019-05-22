@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background image repeat-x</title>
+  <style>
+  /* HTML元素上的这个规则至少使您的页面与浏览器窗口的高度相同。因此，页面背景始终从底部开始，左侧窗口的一角，而不是内容结束处的更高位置。
+
+     如果您的内容比窗口高，则无需包括。
+  */
+  html {
+    min-height: 100%;
+  }
+
+  body {
+    background: black url(img/sky.png) repeat-x left bottom;
+    color: #fff;
+    font: 1.1em sans-serif;
+		padding: 1.5em 1.5em 1em;
+  }
+
+  p {
+    font-size: 1.125em;
+  }
+  </style>
+</head>
+<body>
+
+  <h1>Background repeats horizontally</h1>
+
+  <p>White background color fills in space above image.</p>
+</body>
+</html>

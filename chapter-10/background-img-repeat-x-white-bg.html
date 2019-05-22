@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background image repeat-x</title>
+  <style>
+  /* 删除以下短页规则周围的注释。它使您的页面比浏览器窗口少。因此，页面背景从窗口的左下角开始，而不是内容结束处较高的位置。 */
+
+  /* html {
+    min-height: 100%;
+  } */
+
+  body {
+    background: url(img/sky.png) repeat-x left bottom;
+    /* 上面的简写与单独写下这些内容相同：
+        background-image: url(img/sky.png);
+        background-repeat: repeat-x;
+        background-position: left bottom;
+    */
+
+    color: #fff;
+    font: 1.1em sans-serif;
+		padding: 1.5em 1.5em 1em;
+  }
+
+  p {
+    font-size: 1.125em;
+  }
+
+  /* 对于引导的note */
+  .note {
+    color: #000;
+    font-size: .9375em;
+    margin: -.5em 0 3em;
+  }
+  </style>
+</head>
+<body>
+  <p class="note">[<b>Note:</b> Make your browser smaller to replicate the effect shown in Fig 10.10.10 on page 191. You can resize the browser by
+  dragging the lower-right corner.]</p>
+
+  <h1>Background repeats horizontally</h1>
+
+  <p>White background color fills in space above image.</p>
+</body>
+</html>
