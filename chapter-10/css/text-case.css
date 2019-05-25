@@ -1,0 +1,92 @@
+body {
+  background-color: #88b2d2;
+  font: 100% Geneva, Tahoma, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+  /* 这些声明无法使用font简记法，除非同时声明字体大小 */
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: normal;
+
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h1 {
+  /* 这些声明无法使用font简记法，除非同时声明字体系列 */
+	font-size: 2.1875em; /* 35px/16px */
+  line-height: 1.19318; /* 我把这个从书中删掉只是为了让例子简单 */
+
+  text-transform: uppercase; /* 改变文本大小写，uppercase所有字母大写 */
+}
+
+h2 {
+  background-color: #eaebef;
+	color: #7d717c;
+	font-size: 1.75em; /* 28px/16px */
+}
+
+p {
+  text-align: justfiy;
+}
+
+em,
+a:link,
+.intro .subhead {
+  font-weight: bold;
+}
+
+.architect {
+  background-color: #fff;
+  padding: 1.5em 1.75em;
+}
+
+.intro {
+	background-color: #686a63;
+	color: #fff;
+  line-height: 1.45;
+  padding: 1px 1.875em .7em;
+}
+
+.intro .subhead {
+  font-size: 1.125em; /* 18px/16px */
+  text-align: center;
+}
+
+.intro p {
+	font-size: 1.0625em; /* 17px/16px */
+}
+
+.project p {
+  /* 这些声明无法使用font简记法，除非同时声明字体系列 */
+	font-size: .9375em; /* 15px/16px */
+  line-height: 1.65; /* 15px x 1.65 = 24.75px */
+  text-indent: 2em;  /* 30px 因为0.9375em的字体大小大约等于15px，因此这个缩进约为15px * (2em/0.9375) ≈ 30px */
+}
+
+/* text-align 也适用于图像，以下规则使出现在h2标签下面的图像居中 */
+.photos {
+  text-align: center;
+}
+
+/* :::: 链接 :::: */
+a:link {
+  color: #e10000; /* 红色 */
+}
+
+a:visited {
+  color: #b44f4f;
+}
+
+a:hover {
+  color: #f00;
+}
+
+.intro a {
+  color: #fdb09d; /* 略带粉色 */
+}
+
+.intro a:hover {
+  color: #fec4b6;
+}
