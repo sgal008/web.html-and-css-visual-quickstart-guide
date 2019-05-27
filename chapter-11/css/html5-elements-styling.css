@@ -1,0 +1,15 @@
+/*
+设置新的“类似块级别”HTML5元素的样式，以便它们在旧浏览器中占据自己的行。
+现代浏览器会执行此默认设置。
+*/
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
