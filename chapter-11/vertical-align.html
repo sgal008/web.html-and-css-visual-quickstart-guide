@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aligning Elements Vertical</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700" />
+  <link rel="stylesheet" href="css/vertical-align.css">
+</head>
+<body>
+  <h1>Vertical-align example</h1>
+
+  <!-- 注意：在下面的action属性中，您将把show-results.php替换为提交表单时处理表单的服务器上脚本的位置和文件名。有关表格的内容，请参阅第16章。
+
+  role='search' ARIA 角色地表通过屏幕阅读器和其他辅助设备提高了表单的可访问性。ARIA在第3章中讨论。
+  -->
+
+  <form action="show-results.php" method="GET" role="search">
+    <lable for="search">Search</lable>
+    <input type="search" id="search" name="search">
+    <input type="image" src="img/btn-go.png" alt="Submit search">
+  </form>
+</body>
+</html>

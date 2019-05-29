@@ -1,0 +1,147 @@
+/*
+=========================
+Le Journal
+=========================
+*/
+
+
+/* normalize.css v2.1.2 | MIT License | git.io/normalize
+    (truncated for example in book)
+---------------------------------------------------------------- */
+
+/* ::: HTML5 display definitions ::: */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* ::: Base ::: */
+/**
+ * Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* ::: Links ::: */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ::: Typography ::: */
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/* ::: Embedded content ::: */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+/* -- end of abridged normalize -- */
+
+
+/* WEB 图标 字体
+  (出现的社交图标在右上角)
+------------------------------------------ */
+@font-face {
+  font-family: 'Social Icons';
+  src: url("font/socialico-webfont.eot");
+  src: url("font/socialico-webfont.eot?#iefix") format("embedded-opentype"),
+        url("font/socialico-webfont.woff") format("woff"),
+        url("font/socialico-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* GENERAL (APPLIED TO ELEMENTS)
+------------------------------------------ */
+
+
+
+/* CONTAINERS
+------------------------------------------ */
+
+
+
+/* MASTHEAD
+------------------------------------------ */
+
+
+/* ::: Main Navigation ::: */
+
+
+/* ::: Social Sites Icons ::: */
+
+
+
+/* MAIN CONTENT
+------------------------------------------ */
+
+
+/* ::: Blog Post Footer ::: */
+
+
+/* ::: Pagination Links Below Blog Posts ::: */
+
+
+
+/* SIDEBAR
+------------------------------------------ */
+
+
+/* ::: About Me ::: */
+
+
+/* ::: Previous and Shared Posts ::: */
+
+
+/* FOOTER
+------------------------------------------ */
+
+
+
+/* html5boilerplate.com Clearfix
+--------------------------------- */
+
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}

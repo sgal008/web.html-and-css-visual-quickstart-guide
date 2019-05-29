@@ -1,0 +1,40 @@
+/* 图 11.17.3中显示的样式 */
+input[type="image"] {
+  vertical-align: bottom;
+}
+
+/* 附加在章节中未出现的样式 */
+body {
+  font: 100% sans-serif;
+  padding: 10px 0 0 5px;
+}
+
+h1 {
+  font-size: 1.125em;
+  font-family: sans-serif;
+  margin-bottom: 3px;
+}
+
+lable {
+  color: #717171;
+  font: .875em 'Opens Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input[type="search"] {
+  border: 1px solid #c5c5c5;
+  box-shadow: inset 0px 0px 3px 0px #d8d8d8; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+  font: 1em Georgia, 'Times New Roman', serif;
+  height: 40px;
+  margin-left: 6px;
+  margin-right: 5px;
+  padding: .3em; /* 4.8px/16px */
+  width: 260px;
+
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	-webkit-appearance: none; /* 关闭在 Chrome, iOS, 和 Safari 的默认搜索框样式 */
+}
