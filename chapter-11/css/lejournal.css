@@ -87,60 +87,297 @@ img {
 }
 
 
-/* GENERAL (APPLIED TO ELEMENTS)
+/* 全体的 (应用到元素)
 ------------------------------------------ */
+body {
+  font: 100%/1.2 Georgia, "Times New Roman", serif;
+}
 
+h1 {
+  color: #212121;
+  font-family: 'Lato', sans-serif;
+  font-size: 3.25em;
+  font-weight: 300;
+  letter-spacing: -2px;
+  line-height: .975;
+}
 
+.about h2,
+.mod h2,
+.nav-main a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-/* CONTAINERS
+.about h2,
+.mod h2 {
+  font-size: .875em; /* 15px/16px */
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: #1162a4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 我的开发工具VSCode默认使用双冒号 */
+.more::after {
+  content: ' »';
+}
+
+img {
+  border: 0;
+}
+
+/* 容器
 ------------------------------------------ */
+.page {
+  margin: 0 auto;
+  width: 960px;
+}
 
+.container {
+  background: url(../img/bg.png) repeat-y 629px 0;
+  padding-bottom: 1.9375em;
+}
 
+main {
+  float: left;
+  width: 600px;
+}
 
-/* MASTHEAD
+.sidebar {
+  float: right;
+  margin-top: 1.875em;
+  width: 300px;
+}
+
+/* 报头
 ------------------------------------------ */
+.masthead {
+  padding-top: 10px;
+  position: relative; /* 相对定位，作为子元素ul(class="social-sites")的参考点 */
+}
 
+.logo {
+  font-size: 10px;
+  line-height: 1;
+  margin-bottom: -8px;
+  margin-top: 0;
+  text-align: left;
+}
 
-/* ::: Main Navigation ::: */
+/* ::: 主导航 ::: */
+.nav-main {
+  border-bottom: 1px solid #c7c7c8;
+  border-top: 5px solid #019443;
+  margin-bottom: 0;
+  padding: .45em 0 .5em; /* 7px 0 8px */
+}
 
+.nav-main li {
+  border-left: 1px solid #c8c8c8;
+  display: inline-block;
+  text-align: left;
+}
 
-/* ::: Social Sites Icons ::: */
+.nav-main li:first-child {
+  border-left: none;
+}
 
+.nav-main li:last-child a {
+  padding-right: 0;
+}
 
+.nav-main a {
+  color: #292929;
+  display: inline-block;
+  font-size: 1.125em; /* 18px/16px */
+  padding: .5em 1.15em .5em 1.4em;
+}
 
-/* MAIN CONTENT
+.nav-main a:hover {
+  color: #029443;
+  text-decoration: none;
+}
+
+.nav-main .current-page,
+.nav-main .current-page:hover {
+  color: #747474;
+  cursor: default;
+}
+
+/* ::: 社交网站图标 ::: */
+.social-sites {
+  margin: 0;
+  padding: 0;
+  /* 绝对定位默认相对body进行定位，除非它有父级元素也出现了定位元素（父元素一般为相对定位，固定定位和绝对定位也可以给子元素定位），那么将以这个父辈元素为参考点 */
+  position: absolute;
+  right: -3px;
+  top: 41px;
+}
+
+.social-sites li {
+  display: inline;
+  margin-left: -1px;
+}
+
+.social-sites a {
+  color: #019443;
+  font-family: 'Social Icons', sans-serif;
+  font-size: 46px;
+  line-height: .8;
+  vertical-align: middle;
+}
+
+.social-sites a:hover {
+  color: #1162a4;
+  text-decoration: none;
+}
+
+/* 主要内容
 ------------------------------------------ */
+main > .post:first-child > h1 {
+  margin-top: 0.904em;
+}
+
+h1 {
+  margin-bottom: .4125em;
+}
+
+.post-photo {
+  float: left;
+  margin-bottom: 2px;
+  margin-right: 22px;
+  max-width: 61.667%;
+}
+
+.post-blurb p {
+  color: #363636;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* ::: 博客页脚 ::: */
+.post-footer {
+  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
+  padding-bottom: .7em; /* 7.7px/11px */
+  padding-top: .7em;
+}
+
+.post-footer time::before {
+  content: '•  ';
+}
+
+.post-footer a {
+  font-weight: bold;
+}
+
+.footer P {
+  color: #3a3a3a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.688em;
+}
+
+/* 页面级页脚版权部分 */
+.footer p small {
+  font-size: inherit;
+}
+
+/* ::: 博客文章下方的分页链接 ::: */
+.pagination {
+  margin: 45px 0 0;
+  padding: 0;
+}
+
+.pagination li {
+  display: inline-block;
+  font: 0.875em arial, helvetica, sans-serif;
+  margin-right: 0.25em;
+}
 
 
-/* ::: Blog Post Footer ::: */
-
-
-/* ::: Pagination Links Below Blog Posts ::: */
-
-
-
-/* SIDEBAR
+/* 附注栏
 ------------------------------------------ */
+.mod h2 {
+  border-bottom: 1px solid #dbdbdb;
+  margin-top: 2.571em;
+  padding-bottom: .75em;
+}
 
+/* ::: 关于我 ::: */
+.about {
+  background: #2b2b2b;
+  padding: 0.313em 0.625em 0.625em;
+}
 
-/* ::: About Me ::: */
+.about img {
+  border: 5px solid #bebebe;
+}
 
+.about h2,
+.about p {
+  color: #dadada;
+}
 
-/* ::: Previous and Shared Posts ::: */
+.about p {
+  font-size: 0.813em;
+  line-height: 1.5;
+}
 
+.map {
+  margin: 1.438em 0 0.813em;
+}
 
-/* FOOTER
+/* ::: 以前分享的文章 ::: */
+.links {
+  margin: 1.5em 0 4.125em;
+  padding-left: 0;
+  width: 270px;
+}
+
+.links li {
+  margin-bottom: 1.1em;
+}
+
+.links a {
+  font-size: 1.125em;
+  line-height: 1.195;
+}
+
+/* 页脚
 ------------------------------------------ */
+footer[role="contentinfo"] {
+  border-top: 1px solid #cacbcb;
+}
 
 
-
-/* html5boilerplate.com Clearfix
+/* 清除浮动
+html5模板网站:html5boilerplate.com
 --------------------------------- */
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
 
+.clearfix::after{
+  clear: both;
+}
 
 /*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
+ * 只作用于IE 6/7
+ * 包含此规则以触发hasLayout并包含浮动。
  */
 .clearfix {
   *zoom: 1;
