@@ -1,0 +1,17 @@
+/* 没有下载到单独English字符集，下载的是默认选项Westerm Latin */
+
+body {
+  font-family: 'PTSans', sans-serif;
+  font-size: 100%;
+  line-height: 1.25;
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('PTS55F-webfont.eot');
+    src: url('PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTS55F-webfont.woff') format('woff'),
+         url('PTS55F-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
