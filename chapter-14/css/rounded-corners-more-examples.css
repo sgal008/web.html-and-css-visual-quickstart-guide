@@ -1,0 +1,23 @@
+div {
+  background: #ff9;
+  border: 5px solid #326795;
+  float: left;
+  height: 150px;
+  margin: 10px;
+  width: 150px;
+}
+
+.example-1 {
+  /* 将左上方和右下方圆角半径设为10px，右上方和左下方圆角半径设为20px */
+  border-radius: 10px 20px;
+}
+
+.example-2 {
+  /* 将左上方圆角半径设为20px，其他圆角半径设为0 */
+  border-radius: 20px 0 0;
+}
+
+.example-3 {
+  /* 将左上方圆角半径设为10px，右上方圆角半径设为20px，右下方圆角半径设为0，左下方圆角半径设为30px */
+  border-radius: 10px 20px 0 30px;
+}

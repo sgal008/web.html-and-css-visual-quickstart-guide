@@ -1,0 +1,42 @@
+body {
+  background: #000;
+  color: #fff;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 2.25em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+/* 注意：下面的背景图像URL与在书中所示的例子中，
+因为我已经放置了图像在子文件夹（称为“img”）中，这在组织站点时很常见。
+另外，我认为这将有助于您了解如何构建
+在这些情况下，您的背景图像URL。
+注意URL与样式表所在位置相关，而不是与正在显示的HTML页图像相关。 */
+.night-sky {
+  background-color: navy; /* 备用，为旧浏览器 */
+  background-image:
+    url(../img/ufo.png),
+    url(../img/stars.png),
+    url(../img/stars.png),
+    url(../img/sky.png);
+
+    background-position:
+      50% 102%,
+      100% -150px,
+      0 -150px,
+      50% 100%;
+
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      repeat-x;
+
+    height: 300px;
+    margin: 25px auto 0; /* 与书中稍有不同 */
+    padding-top: 36px;
+    width: 75%;
+}
