@@ -1,0 +1,155 @@
+body {
+  padding: 1.25em; /* 20px/16px，因此每侧边有20px */
+  font-size: 100%;
+}
+
+div {
+  float: left;
+  height: 150px;
+  margin: 10px;
+  width: 150px;
+}
+
+p {
+  color: #fff;
+  font: bold 1.25em/1 sans-serif; /* 20px/16px */
+  padding-top: 1.65em; /* 33px/16px */
+  text-align: center;
+}
+
+
+/* 注意：下面的渐变是标准CSS3语法。浏览器
+支持他们的有Chrome26+、Firefox 16+、IE 10+和Opera12.10+。
+
+有关相同的渐变效果，请参见gradients-with-browser-prefixes.css。
+但由于还包含了供应商前缀代码，因此渐变将起作用。
+在几个旧的浏览器上。
+
+带有“兼容旧浏览器”注释的背景是将显示的颜色
+在不支持渐变语法的浏览器中。你可以使用背景
+图像也作为兼容旧浏览器（单独使用或与颜色组合使用）。
+例如，background:red url（gradient image.jpg）no repeat；。
+ */
+
+ /* LINEAR GRADIENTS(线性渐变)
+------------------------------------------ */
+/* :::: Vertical(垂直) :::: */
+.vertical-down {
+  background: silver; /* 备用，为旧浏览器 */
+
+  /* 默认渐变，因此不需要在颜色之前指定“到底部” */
+  background: linear-gradient(silver, black);
+}
+
+.vertical-up {
+  background: silver; /* 备用，为旧浏览器 */
+  background: linear-gradient(to top, silver, black);
+}
+
+/* :::: Horizontal(水平) :::: */
+.horizontal-rt {
+  background: silver; /* 备用，为旧浏览器 */
+  background: linear-gradient(to right, silver, black);
+}
+
+.horizontal-lt {
+  background: silver; /* 备用，为旧浏览器 */
+  background: linear-gradient(to left, silver, black);
+}
+
+/* :::: Diagonal Angles(对角) :::: */
+/* 注意：第291页的图显示了备用颜色为Aqua，但我已经切换了它。
+因为白色文字在海军背景下更容易阅读。 */
+.angle-bot-rt {
+  background: navy; /* 备用，为旧浏览器 */
+  background: linear-gradient(to bottom right, aqua, navy);
+}
+
+.angle-bot-lt {
+  background: navy; /* 备用，为旧浏览器 */
+  background: linear-gradient(to bottom left, aqua, navy);
+}
+
+.angle-top-rt {
+  background: navy; /* 备用，为旧浏览器 */
+  background: linear-gradient(to top right, aqua, navy);
+}
+
+.angle-top-lt {
+  background: navy; /* 备用，为旧浏览器 */
+  background: linear-gradient(to top left, aqua, navy);
+}
+
+/* :::: Angles via Degrees(角度通过度数) :::: */
+.angle-120deg {
+  background: navy; /* 备用，为旧浏览器 */
+  background: linear-gradient(120deg, aqua, navy);
+}
+
+.angle-290deg {
+  background: navy; /* 备用，为旧浏览器 */
+  background: linear-gradient(290deg, aqua, navy);
+}
+
+/* RADIAL GRADIENTS(径向渐变)
+------------------------------------------ */
+/* :::: Radial(辐射式) :::: */
+.radial P {
+  text-shadow: 0 0 3px #000;
+}
+
+.radial-center {
+  background: red; /* 备用，为旧浏览器 */
+  background: radial-gradient(yellow, red); /* 默认 */
+}
+
+.radial-top {
+  background: red; /* 备用，为旧浏览器 */
+  background: radial-gradient(at top, yellow, red);
+}
+
+.radial-size-1 {
+  background: red; /* 备用，为旧浏览器 */
+  background: radial-gradient(100px 50px, yellow, red);
+}
+
+.radial-size-2 {
+  background: red; /* 备用，为旧浏览器 */
+  background: radial-gradient(70% 90% at bottom left, yellow, red);
+}
+
+.radial-various-1 {
+  background: red; /* 备用，为旧浏览器 */
+  background: radial-gradient(closest-side at 70px 60px, yellow, lime, red);
+}
+
+.radial-various-2 {
+  background: red; /* 备用，为旧浏览器 */
+  background: radial-gradient(30px 30px at 65% 70%, yellow, lime, red);
+}
+
+/* LINEAR GRADIENTS WITH COLOR STOPS(带颜色停止位置的线性渐变)
+------------------------------------------ */
+.color-stops div {
+  margin-bottom: 30px;
+}
+
+.color-stops p {
+  padding-top: 25px;
+  text-shadow: 0 0 3px #000;
+}
+
+.color-stops-2 p {
+  font-size: 18px;
+  line-height: 1.05;
+}
+
+.color-stops-1 {
+  background: green; /* 备用，为旧浏览器 */
+  background: linear-gradient(yellow 10%, green);
+}
+
+.color-stops-2 {
+  background: green; /* 备用，为旧浏览器 */
+  background: linear-gradient(to top right, yellow, green 70%, blue);
+}

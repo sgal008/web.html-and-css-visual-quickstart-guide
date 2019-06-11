@@ -1,0 +1,58 @@
+body {
+  font: 100%/1.2 sans-serif;
+  padding: 5px 0 0 20px;
+}
+
+a {
+  color: #1162a4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.documents {
+  list-style: none; /* 关闭项目符号，因为我们将显示图标 */
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.documents li {
+  margin-top: .45em;
+}
+
+/* 在HTML中每个链接都有这个类(class=icon) */
+.icon {
+  display: inline-block;
+	line-height: 1.1;
+	font-size: .875em;
+	min-height: 16px; /* 设置为图标高度，使其完全不被切断 */
+	padding-left: 23px;
+	padding-top: 2px;
+
+	/* 绝对允许定位图标相对于HTML中class=“icon”的元素 */
+	position: relative;
+}
+
+.icon::before {
+  background-image: url(../img/sprite.png);
+  content: " ";
+  display: block;
+  height: 16px;
+  left: 0; /* 默认。如果希望图标出现在不同的位置，请更改此选项 */
+	position: absolute;
+	width: 16px; /* 图标宽度 */
+	top: 0; /* 默认。如果希望图标出现在不同的位置，请更改此选项 */
+}
+
+/* 任意sprite图像的移动位置以.xls结尾的文档文件名 */
+a[href$=".xls"]::before {
+  background-position: -17px 0;
+}
+
+/* 任意sprite图像的移动位置以.docx结尾的文档文件名 */
+a[href$=".docx"]::before {
+  background-position: -34px 0;
+}

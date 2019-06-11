@@ -1,0 +1,17 @@
+body {
+  background: #a2735f;
+  padding: 20px;
+}
+
+img {
+  display: block;
+}
+
+/* 如果不显式设置不透明度，则默认为1，
+因此，该框显示正常。换句话说，
+省略不透明度和包括不透明度：1；相同 */
+.box {
+  background: #000;
+  padding: 20px;
+  width: 420px;
+}
