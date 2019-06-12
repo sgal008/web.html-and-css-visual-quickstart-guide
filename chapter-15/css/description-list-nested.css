@@ -1,0 +1,21 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+dt {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* 为位于另一个dl中的任意dl的dt设置样式 */
+dl dl dt {
+  text-transform: none;
+}
+
+dd + dt {
+  margin-top: 1em;
+}

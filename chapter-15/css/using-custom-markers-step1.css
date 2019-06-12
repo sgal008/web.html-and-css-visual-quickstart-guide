@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+
+.hdg {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.hdg + ul {
+  margin-top: .4em;
+}
+
+ul {
+  /* 取消默认标记 */
+  list-style: none;
+
+  /* 删除列表项的缩进 */
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  /* 显示定制化的标记 */
+  /* 请注意，根据您的位置，图片的URL可能有所不同。
+  根据CSS文件的位置存储图像。当然，
+  您的文件名也可能与checkmark.png不同。 */
+  background: url(../img/checkmark.png) no-repeat 0 0;
+}

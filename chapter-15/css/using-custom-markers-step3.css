@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+}
+
+.hdg {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.hdg + ul {
+  margin-top: .4em;
+}
+
+ul {
+  /* 取消默认标记 */
+  list-style: none;
+
+  /* 删除列表项的缩进 */
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  /* 显示定制化的标记 */
+  /* 让图像在列表项目内显示的位置稍微往下一些(.1em) */
+  background: url(../img/checkmark.png) no-repeat 0 .1em;
+
+  /* 让行高变大，从而可以容纳整个标记 */
+  line-height: 1.8;
+
+  /* 将文本推开，为标记腾出位置 */
+  padding-left: 1.75em;
+}

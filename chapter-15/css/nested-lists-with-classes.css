@@ -1,0 +1,36 @@
+/* :::: 书中没有显示-只是一点字体和间距处理 :::: */
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+}
+
+.hdg {
+	font-size: 1.25em;
+	margin-bottom: 0;
+}
+
+.hdg + ol { /* like h1 + ol */
+	margin-top: .5em;
+}
+
+
+/* 定义标记 */
+ol {
+  list-style-type: upper-roman;
+}
+
+.level2 {
+  list-style-type: upper-alpha;
+}
+
+.level3 {
+  list-style-type: decimal;
+}
+
+/* 字体大小 */
+ol li {
+  font-size: .875em;
+}
+
+li li {
+  font-size: 1em; /* 防止文本不断缩小 */
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choosing Where to Start List Numbering</title>
+  <style>
+    /* 和往常一样，将CSS放在外部文件中，而不是嵌入它。我在这里嵌入它以简化演示 */
+
+    /* 书中没有显示-只是一点字体和间距处理 */
+    body {
+      font-family: Georgia, serif;
+    }
+
+    .hdg {
+      font-size: 1.25em;
+      margin-bottom: 0;
+    }
+
+    .hdg + ol {
+      margin-top: .5em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="hdg">Changing a light bulb (with a few steps missing)</h1>
+
+  <ol start="2">
+    <li>Unscrew the old bulb.</li>
+    <li value="5">Screw in the new bulb.</li>
+    <li>Plug in the lamp and turn it on!</li>
+  </ol>
+</body>
+</html>
