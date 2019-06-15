@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading an External Script from a Sub-folder</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+  <p>... All of your HTML content is here ...</p>
+
+  <p>See the HTML code and comments regarding how to load external JavaScript files (from a sub-folder) directly before the <code>&lt;/body&gt;</code> end tag.</p>
+
+  <!--
+    通常，为了获得最佳的性能结果，请在页面的最后，即末尾之前加载您的javascript，如下所示。
+
+    这个页面和load-before-body-end-tag.html之间的唯一区别是，这个页面从名为“js”的子目录加载javascript文件。我建议将您的javascript文件组织在这样一个文件夹中；这是一种常见的做法
+   -->
+
+   <script src="js/behavior.js"></script>
+</body>
+</html>

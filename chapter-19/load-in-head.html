@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading an External Script in the head</title>
+  <!-- 在任何JS文件之前加载样式表 -->
+  <link rel="stylesheet" href="css/global.css">
+  <!-- 尽管从性能角度来看最好避免在<head>中尽可能加载脚本，但有时是必要的。一个例子是加载HTML5 SHIV。
+    请参阅第11章（pgs）中的“为旧浏览器中的HTML5元素设计样式”和“HTML5 SHIV”。）以及该章的代码示例。您还可以在http://code.google.com/p/html5siv/ 上了解HTML5 SHIV。
+    
+    还请参见load-before-body-end-tag.html和load-before-body-end-tag-subfolder.html中有关将JS文件放在子目录中以实现组织目的的注释。
+  -->
+
+  <script src="behavior.js"></script>
+</head>
+<body>
+  <p>... All of your HTML content is here ...</p>
+
+  <p>See the HTML code and comments regarding how to load external JavaScript files in a page's <code>head</code> element.</p>
+</body>
+</html>

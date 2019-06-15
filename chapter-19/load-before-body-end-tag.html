@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading an External Script</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+  <p>... All of your HTML content is here ...</p>
+
+  <p>See the HTML code and comments regarding how to load external JavaScript files directly before the <code>&lt;/body&gt;</code> end tag.</p>
+
+  <!--
+    通常，为了获得最佳的性能结果，请在页面的最后，即末尾之前加载您的javascript，如下所示。
+
+    我建议将JavaScript文件放在子目录中，就像将CSS文件放在子目录中一样。例如，有些人创建一个名为“js”或“scripts”的文件夹来存放他们的javascript。
+    如果这样做，请确保更改<script>src属性中的文件路径。例如，将其更改为<script src=“js/behavior.js”><script>
+    如果文件位于名为“js”的文件夹中，如load-before-body-end-tag-subfolder.html所示.
+   -->
+
+   <script src="behavior.js"></script>
+</body>
+</html>
