@@ -215,7 +215,7 @@
 * 加载外部脚本
 * 添加嵌入脚本
 * JavaScript事件
-## [第 20 章 测试和调试网页](https://github.com/sgal008/web.html-and-css-visual-quickstart-guide/tree/master/chapter-20)
+## [第 20 章 测试和调试网页](chapter-20)
 * 验证代码
   * [https://html5.validator.nu/](https://html5.validator.nu/)
   * [https://validator.w3.org/](https://validator.w3.org/)
