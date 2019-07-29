@@ -261,10 +261,6 @@ main > .post:first-child > h1 {
   font-size: 0.688em;
 }
 
-.footer p small {
-  font-size: inherit;
-}
-
 /* 页面级页脚版权部分 */
 .footer p small {
   font-size: inherit;
